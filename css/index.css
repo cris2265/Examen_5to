@@ -1,0 +1,53 @@
+.root {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+.cuadro {
+    width: 30rem;
+    height: 16rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid black;
+}
+.titulo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 2rem;
+}
+.boton {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+    margin: auto;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.texto {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 1.6rem;
+}
+.bordes {
+    border-radius: 2rem;
+    border: 1px solid black;
+}
